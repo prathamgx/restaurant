@@ -24,11 +24,13 @@ const Restaurant = () => {
         })
     
         setMenuData(updatedList);
+        setMenuList(menuList)
     }
 
   return (
     <>
         <NavBar filterItem={filterItem} menuList={menuList}/>
+    
         <MenuCard menuData={menuData} /> 
     </>
   )
